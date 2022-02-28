@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #24252a;
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+/* ===================== One*/
+header.one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  border-bottom: 1px solid red;
+}
+
+.logo-one {
+  cursor: pointer;
+  color: #ecf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.logo-one:hover {
+  color: rgba(0, 136, 169, 0.8);
+}
+
+.nav__links-one {
+  list-style: none;
+}
+
+.nav__links-one li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links-one li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links-one li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* ===================== Two*/
+header.two {
+  border-bottom: 1px solid red;
+}
+
+.nav-two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  height: 8vh;
+}
+
+.nav__list-two {
+  list-style: none;
+  display: flex;
+}
+
+.nav__list-two li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+}
+
+@media (max-width: 999px) {
+  .nav__list-two {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+  }
+}
